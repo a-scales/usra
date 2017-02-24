@@ -1,0 +1,51 @@
+.site-custom-image {
+    width: 400px;
+//    padding: em;
+//    float: left;
+}
+.site-branding {
+    padding: 0.5em;
+}
+.site-header {
+    background-image: url(./images/GrainBG.png);
+    background-size: cover;
+}
+.site-title {
+    display: none;
+}
+.site-description {
+//    float: left;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 0.25em;
+    margin-bottom: 0px;
+}
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
