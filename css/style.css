@@ -22,10 +22,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*
 TEST ZONE
 -------------*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700i");
-.site-branding {
-  background-color: red; }
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -48,6 +44,7 @@ TEST ZONE
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700i");
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -425,7 +422,7 @@ a {
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #dfdfdf; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -438,7 +435,9 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  padding-left: 0.5em;
+  background-color: #353795; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -454,18 +453,24 @@ a {
       .main-navigation ul ul ul {
         left: -999em;
         top: 0; }
-      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-        left: 100%; }
+      .main-navigation ul ul li {
+        width: 200px; }
+        .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+          left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
+    display: block;
+    padding: 0.5em;
     float: left;
     position: relative; }
+    .main-navigation li:hover > a, .main-navigation li.focus > a {
+      color: red; }
   .main-navigation a {
-    display: block;
+    color: #fff;
     text-decoration: none; }
 
 /* Small menu. */
@@ -591,6 +596,30 @@ a {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.site-custom-image {
+  width: 400px; }
+
+.site-branding {
+  padding: 0.5em; }
+
+.site-header {
+  background-image: url(./images/GrainBG.png);
+  background-size: cover; }
+
+.site-title {
+  display: none; }
+
+.site-description {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 0.25em;
+  margin-bottom: 0px; }
+
+.hero-div {
+  display: block;
+  height: 150px;
+  background-color: red; }
+
 .sticky {
   display: block; }
 

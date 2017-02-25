@@ -15,6 +15,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+        <div class="hero-div" id="featured-image"><div class="hero-text">The USRA promotes the conditions that encourage the practice and development of rafting at all competitive and recreational levels. The USRA aims to grow rafting as a unified body that includes amateur sport and competition, education, safety, and conservation.</div> </div>
 		<main id="main" class="site-main" role="main">
 
 			<?php

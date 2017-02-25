@@ -20,6 +20,34 @@
     margin-top: 0.25em;
     margin-bottom: 0px;
 }
+@media screen and (max-width: 600px) {
+  body.home .hero-div div {
+    display: none !important;
+  }
+}
+body.home .hero-div {
+  display: block;
+  height: 45vh;
+  //background-color: red;
+  div {
+    display: none;
+    top:50%;
+    position: relative;
+    transform: translateY(-50%);
+    width:60%;
+    min-height:50%;
+    padding: 0.5em;
+    margin-left:1em;
+    background-color: rgba(53,55,149,.5);
+    font-size:20pt;
+    font-weight: 600;
+    color: #ffffff;
+  }
+}
+
+.hero-div {
+  display: none;
+}
 
 .sticky {
 	display: block;
@@ -43,6 +71,7 @@
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+
 }
 
 .page-links {

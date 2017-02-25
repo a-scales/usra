@@ -22,10 +22,22 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*
 TEST ZONE
 -------------*/
-.site-header {
-//    background-color: red;
+.site-main {
+  width: 70vw;
+  float: left;
+  margin-left:1em;
 }
-
+.widget-area {
+  margin: 1em;
+  padding: 0.5em;
+  background-color: #e52d2d;
+  width:20vw;
+  float: right;
+}
+.site-content {
+  background-image: url('./images/GrainBG.png');
+  background-size: contain;
+}
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------

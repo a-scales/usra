@@ -21,7 +21,7 @@ function usra_custom_header_setup() {
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 400,
-		'height'                 => 200,
+//		'height'                 => 200,
 		'flex-height'            => false,
         'flex-width'             => true,
 		'wp-head-callback'       => 'usra_header_style',

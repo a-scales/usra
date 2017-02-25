@@ -40,4 +40,12 @@
 			}
 		} );
 	} );
+	wp.customize('usra_hero_image', function( value ) {
+		value.bind( function( to ){
+			// alert(to);
+			$('.hero-image').css( {
+				'background-image':'url(' + to + ')'
+			});
+		});
+	})
 } )( jQuery );

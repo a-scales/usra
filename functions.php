@@ -61,7 +61,8 @@ function usra_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'usra_custom_background_args', array(
-		'default-color' => 'ffffff',
+//		'wp-head-callback'  => 'usra_hero_custom',
+	    'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 
@@ -146,5 +147,4 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-
 
