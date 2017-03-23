@@ -7,7 +7,12 @@
     padding: 0.5em;
 }
 .site-header {
-    background-image: url(./images/GrainBG.png);
+//    background-image: url(./images/GrainBG.png);
+    background: #272a7f;
+    background: -moz-linear-gradient(left, #272a7f 0%, #67a3e0 100%);
+    background: -webkit-linear-gradient(left, #272a7f 0%,#67a3e0 100%);
+    background: linear-gradient(to right, #272a7f 0%,#67a3e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272a7f', endColorstr='#67a3e0',GradientType=1 );
     background-size: cover;
 }
 .site-title {
@@ -42,11 +47,23 @@ body.home .hero-div {
     font-size:20pt;
     font-weight: 600;
     color: #ffffff;
+    
+    
   }
+    border-bottom-width: 2.5em;
+    border-bottom-style: solid;
+    border-bottom-color: #cc2626;
 }
 
 .hero-div {
   display: none;
+}
+
+@media screen and (max-width:1080px) {
+    .site-content .widget-area {
+//    #secondary 
+        display: none !important;
+    }
 }
 
 .sticky {

@@ -23,6 +23,21 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 TEST ZONE
 -------------*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700i");
+.us-flag {
+  background-image: url("./images/flag.png");
+  float: right;
+  height: 100pt;
+  width: 200pt;
+  display: block;
+  top: 1em;
+  right: 1em;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+@media screen and (max-width: 900px) {
+  .us-flag {
+    display: none; } }
 .site-main {
   width: 70vw;
   float: left;
@@ -31,12 +46,12 @@ TEST ZONE
 .widget-area {
   margin: 1em;
   padding: 0.5em;
-  background-color: #e52d2d;
+  background-color: #cfcfcf;
   width: 20vw;
   float: right; }
 
 .site-content {
-  background-image: url("./images/GrainBG.png");
+  background-url: 'http://api.thumbr.it/whitenoise-361x370.png?background=d6d6d6ff&noise=2b05ff&density=100&opacity=7';
   background-size: contain; }
 
 /*--------------------------------------------------------------
@@ -453,7 +468,7 @@ a {
   float: left;
   width: 100%;
   padding-left: 0.5em;
-  background-color: #353795; }
+  background-color: #cc2626; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -619,7 +634,11 @@ a {
   padding: 0.5em; }
 
 .site-header {
-  background-image: url(./images/GrainBG.png);
+  background: #272a7f;
+  background: -moz-linear-gradient(left, #272a7f 0%, #67a3e0 100%);
+  background: -webkit-linear-gradient(left, #272a7f 0%, #67a3e0 100%);
+  background: linear-gradient(to right, #272a7f 0%, #67a3e0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272a7f', endColorstr='#67a3e0',GradientType=1 );
   background-size: cover; }
 
 .site-title {
@@ -636,7 +655,10 @@ a {
     display: none !important; } }
 body.home .hero-div {
   display: block;
-  height: 45vh; }
+  height: 45vh;
+  border-bottom-width: 2.5em;
+  border-bottom-style: solid;
+  border-bottom-color: #cc2626; }
   body.home .hero-div div {
     display: none;
     top: 50%;
@@ -654,6 +676,9 @@ body.home .hero-div {
 .hero-div {
   display: none; }
 
+@media screen and (max-width: 1080px) {
+  .site-content .widget-area {
+    display: none !important; } }
 .sticky {
   display: block; }
 

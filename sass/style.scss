@@ -22,6 +22,26 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*
 TEST ZONE
 -------------*/
+
+.us-flag {
+    background-image: url('./images/flag.png');
+//    background-color: red;
+    float: right;
+    height: 100pt;
+    width: 200pt;;
+    display:block;
+    top: 1em;
+    right: 1em;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+@media screen and (max-width:900px) {
+    .us-flag {
+        display: none;
+    }
+}
 .site-main {
   width: 70vw;
   float: left;
@@ -30,12 +50,14 @@ TEST ZONE
 .widget-area {
   margin: 1em;
   padding: 0.5em;
-  background-color: #e52d2d;
+  background-color: #cfcfcf;
   width:20vw;
   float: right;
 }
 .site-content {
-  background-image: url('./images/GrainBG.png');
+//    background-color: #fff;
+    background-url: 'http://api.thumbr.it/whitenoise-361x370.png?background=d6d6d6ff&noise=2b05ff&density=100&opacity=7';
+//  background-image: url('./images/GrainBG.png');
   background-size: contain;
 }
 /*--------------------------------------------------------------
